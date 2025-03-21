@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Big Shoulders Bold";
+    src: url(../fonts/Big_Shoulders/static/BigShoulders-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lexend Deca Regular";
+    src: url(../fonts/Lexend_Deca/static/LexendDeca-Regular.ttf);
+    font-weight: 400;
+}
+
+body {
+    font-family: "Lexend Deca Regular";
+    font-size: 0.938rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+}
+
+h2 {
+    font-family: "Big Shoulders Bold";
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.9rem 4rem;
+}
+
+.cars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.car {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 4rem;
+    padding-right: 3.5rem;
+}
+
+.car p {
+    margin-bottom: 5rem;
+}
+
+.car a {
+    text-decoration: none;
+    border-radius: 25rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.car a:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.dot {
+    margin-bottom: 1rem;
+}
+
+.sedans {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs a {
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.luxury {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
