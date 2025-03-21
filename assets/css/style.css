@@ -32,16 +32,17 @@ h2 {
 .cars {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 70%;
 }
 
 .car {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: start;
     padding: 4rem;
     padding-right: 3.5rem;
+    width: 33%;
 }
 
 .car p {
@@ -49,9 +50,12 @@ h2 {
 }
 
 .car a {
+    position: absolute;
+    bottom: 10%;
     text-decoration: none;
     border-radius: 25rem;
     padding: 1rem 2rem;
+    margin-right: 4rem;
     text-align: center;
     transition: all 0.2s ease-in;
 }
@@ -106,4 +110,11 @@ h2 {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    .cars {
+        flex-direction: column;
+        width: inherit;
+    }
 }
