@@ -112,9 +112,46 @@ h2 {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1120px) {
+    .cars {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .container {
+        padding: 0.9rem 1rem;
+    }
+
+    .cars {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .cars {
         flex-direction: column;
+        align-items: center;
+        width: inherit;
+    }
+    .car {
+        width: 60%;
+    }
+
+    .sedans {
+        border-bottom-left-radius: inherit;
+        border-top-right-radius: 1rem;
+    }
+
+    .luxury {
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .car {
+        padding-right: 1.5rem;
         width: inherit;
     }
 }
